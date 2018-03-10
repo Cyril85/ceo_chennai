@@ -1,0 +1,17 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha ./test/test.js",
+    "start": "node app_express.js",
+    "test-watch": "nodemon --exec 'npm test"
+  },
+  "author": "Cyril",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "hbs": "^4.0.1"
+  }
+}
