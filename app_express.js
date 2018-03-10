@@ -1,11 +1,15 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+var path = require('path');
 
 var app = new express();
 var port = process.env.PORT || 3000;
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
+//app.set('views', path.join(__dirname, 'views'));
+
+app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerHelper('currentYear', () => {
     return new Date().getFullYear()
 });
@@ -18,9 +22,6 @@ app.get('/', (req, res) => {
     res.status(200).render('index.hbs', {site_name: 'express trial'});
 });
 
-app.get('/weather', (req, res) => {
-    res.render('weather.hbs', {site_name: 'express trial'});
-});
 app.listen(port, () => {
     console.log('Server started listening on ', port);
 });

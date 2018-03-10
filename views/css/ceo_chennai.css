@@ -1,0 +1,36 @@
+
+.bg {
+    background-image: url("img/Event-BG.jpg");
+
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.re{
+	position:relative;
+}
+.ab{
+	position:absolute;
+}
+
+.curved_box{
+	padding:30px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+border-radius: 5px 5px 5px 5px;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.dropdown-item{
+display:block;
+}
+
+
+.dropdown .dropdown-menu{
+display:none;
+}
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
