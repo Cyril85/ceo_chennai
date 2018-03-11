@@ -34,3 +34,8 @@ display:none;
 .dropdown:hover .dropdown-menu{
 display:block;
 }
+
+#one{
+    width:100%;
+    opacity:0.5;
+}
